@@ -1,0 +1,14 @@
+def medical_diagnosis():
+    print("Welcome to the diagnostic system")
+
+    fever = input("Do you have a fever? (yes/no): ").lower()
+    cough = input("Do you have a cough? (yes/no): ").lower()
+    fatigue = input("Do you feel fatigue? (yes/no): ").lower()
+
+    if fever == "yes" and cough == "yes":
+        print("Possible flu or COVID-19")
+    elif fatigue == "yes":
+        print("Possible stress or tiredness")
+    else:
+        print("You seem to be fine")
+medical_diagnosis()
