@@ -1,0 +1,9 @@
+import random
+
+def suggest_activity(activities):
+    return random.choice(activities)
+
+activities_list = ["Go for a walk", "Read a book","Watch a movie","Try a new recipe","Do a workout",]
+
+suggested_activity = suggest_activity(activities_list)
+print(f"Suggested Activity: {suggested_activity}")
