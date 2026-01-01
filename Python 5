@@ -1,0 +1,9 @@
+import matplotlib.pyplot as plt
+
+activities = ['Work', 'Social Media', 'Gaming', 'Reading', 'Others']
+screen_time = [30, 25, 20, 15, 10]
+
+plt.pie(screen_time, labels=activities, autopct='%1.1f%%', startangle=140)
+plt.axis('equal')
+plt.title('User Screen Time Across Different Activities')
+plt.show()
